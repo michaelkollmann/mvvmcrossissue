@@ -1,4 +1,6 @@
-﻿using MvvmCross.ViewModels;
+﻿using MvvmCross;
+using MvvmCross.Commands;
+using MvvmCross.ViewModels;
 using mvvmcrossissue.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,9 @@ namespace mvvmcrossissue
     {
         public override void Initialize()
         {
-            RegisterAppStart<StartViewModel>();
+            Mvx.IoCProvider.RegisterType<IMvxCommandHelper, MvxStrongCommandHelper>();
+
+            RegisterAppStart<RootViewModel>();
         }
     }
 }

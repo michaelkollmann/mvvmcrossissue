@@ -8,9 +8,9 @@ namespace mvvmcrossissue.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     [MvxMasterDetailPagePresentation(MasterDetailPosition.Master)]
-    public partial class MainNavigationPage : MvxContentPage<MainNavigationViewModel>
+    public partial class NavigationPage : MvxContentPage<NavigationViewModel>
     {
-        public MainNavigationPage()
+        public NavigationPage()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace mvvmcrossissue.Views
             {
                 mdp.IsPresented = false;
             }
-            else if (Application.Current.MainPage is NavigationPage np && np.CurrentPage is MasterDetailPage nmdp)
+            else if (Application.Current.MainPage is Xamarin.Forms.NavigationPage np && np.CurrentPage is MasterDetailPage nmdp)
             {
                 nmdp.IsPresented = false;
             }

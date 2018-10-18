@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<mvx:MvxContentPage
+    x:Class="mvvmcrossissue.Views.Dialogs.StartMeasurementPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:res="clr-namespace:PreSens.Ceres.Localization"
+    xmlns:vm="clr-namespace:mvvmcrossissue.ViewModels.Dialogs"
+    Title="Start measurement"
+    x:TypeArguments="vm:StartMeasurementViewModel">
+
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="1" Margin="8">
+            <Button Command="{Binding Path=Cancel}" Text="Cancel" />
+        </StackLayout>
+    </Grid>
+</mvx:MvxContentPage>

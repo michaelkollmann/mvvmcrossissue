@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<mvx:MvxMasterDetailPage
-    x:Class="mvvmcrossissue.Views.MainRootPage"
+<mvx:MvxTabbedPage
+    x:Class="mvvmcrossissue.Views.Device.DevicePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
-    xmlns:vm="clr-namespace:mvvmcrossissue.ViewModels"
-    x:TypeArguments="vm:MainRootViewModel"
-    IsPresented="False" />
+    xmlns:vm="clr-namespace:mvvmcrossissue.ViewModels.Device"
+    x:Name="_self"
+    Title="DevicePage"
+    x:TypeArguments="vm:DeviceTabsRootViewModel" />

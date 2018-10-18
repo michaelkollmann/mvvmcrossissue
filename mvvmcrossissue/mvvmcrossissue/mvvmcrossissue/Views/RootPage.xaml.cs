@@ -14,11 +14,13 @@ namespace mvvmcrossissue.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
     [MvxMasterDetailPagePresentation(MasterDetailPosition.Root, WrapInNavigationPage = false)]
-    public partial class MainRootPage : MvxMasterDetailPage<MainRootViewModel>
+    public partial class RootPage : MvxMasterDetailPage<RootViewModel>
     {
-		public MainRootPage ()
+		public RootPage ()
 		{
 			InitializeComponent ();
+
+            
 		}
 	}
 }

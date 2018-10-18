@@ -10,66 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MvvmCross.Forms" Version="6.1.2" />
+    <PackageReference Include="MvvmCross.Forms" Version="6.2.1" />
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Views\MainChildren\DataManagementPage.xaml.cs">
-      <DependentUpon>DataManagementPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\MainChildren\SettingsPage.xaml.cs">
-      <DependentUpon>SettingsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\MainChildren\DevicePage.xaml.cs">
-      <DependentUpon>DevicePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\MainNavigationPage.xaml.cs">
-      <DependentUpon>MainNavigationPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\MainRootPage.xaml.cs">
-      <DependentUpon>MainRootPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\StartPage.xaml.cs">
-      <DependentUpon>StartPage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="FormsApp.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainChildren\DataManagementPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainChildren\SettingsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainChildren\DevicePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainNavigationPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\MainRootPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\StartPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="FormsApp.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Update="Views\MainChildren\DataManagementPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Update="Views\MainChildren\DevicePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Update="Views\MainChildren\SettingsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="Views\MainNavigationPage.xaml">

@@ -10,7 +10,7 @@ using System.Text;
 
 namespace mvvmcrossissue.ViewModels
 {
-    public class MainNavigationViewModel : MvxViewModel
+    public class NavigationViewModel : MvxNavigationViewModel
     {
         #region Fields
         private MenuItem _selectedMenuItem;
@@ -49,13 +49,12 @@ namespace mvvmcrossissue.ViewModels
         #endregion
 
         #region Constructor
-        public MainNavigationViewModel(IMvxNavigationService navigationService)
+        public NavigationViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService)
+            : base(logProvider, navigationService)
         {
-            NavigationService = navigationService;
-
             MenuItems = new[]
             {
-                new MenuItem() { Name = "Devices", ViewModelType = typeof(DeviceViewModel)},
+                new MenuItem() { Name = "Devices", ViewModelType = typeof(DevicesViewModel)},
                 new MenuItem() { Name = "Data", ViewModelType = typeof(DataManagementViewModel)},
                 new MenuItem() { Name = "Settings", ViewModelType = typeof(SettingsViewModel)},
             };
